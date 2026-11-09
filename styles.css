@@ -131,3 +131,19 @@ h2 {
 .skip-link:focus {
   top: 0;
 }
+
+/* ---------- skills ---------- */
+.skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.skills li {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-left: 5px solid #1a56db;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
