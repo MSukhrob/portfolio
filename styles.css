@@ -147,3 +147,38 @@ h2 {
   border-radius: 8px;
   padding: 10px 14px;
 }
+
+/* ---------- projects ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.1);
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #334155;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.card a {
+  font-weight: 600;
+}
