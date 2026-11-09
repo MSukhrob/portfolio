@@ -3,85 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="personal portfolio of sukhrob, a computer science student learning web programming">
-  <title>sukhrob - portfolio</title>
+  <meta name="description" content="Portfolio of Sukhrob, a computer science student at Gachon University who builds clean, accessible and fast web pages.">
+  <meta name="theme-color" content="#4338ca">
+  <title>Sukhrob | Web Developer Portfolio</title>
+  <link rel="icon" href="assets/avatar.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <a class="logo" href="#about">sukhrob</a>
-    <nav aria-label="main navigation">
-      <a href="#about">about</a>
-      <a href="#skills">skills</a>
-      <a href="#projects">projects</a>
-      <a href="#contact">contact</a>
-    </nav>
+    <div class="header-inner">
+      <a class="logo" href="#top">Sukhrob<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="hero" id="about" aria-labelledby="hero-title">
-      <svg class="avatar" viewBox="0 0 120 120" role="img" aria-label="avatar with the letter S">
-        <circle cx="60" cy="60" r="60" fill="#1a56db"/>
-        <text x="60" y="78" text-anchor="middle" font-size="56" font-weight="700" fill="#ffffff" font-family="system-ui, sans-serif">S</text>
-      </svg>
-      <h1 id="hero-title">hi, i am sukhrob</h1>
-      <p class="bio">computer science student at gachon university. i am learning web programming and i like building small pages that are fast, accessible and easy to use.</p>
-      <div class="actions">
-        <a class="btn" href="#projects">view my projects</a>
-        <a class="btn btn-light" href="https://github.com/MSukhrob">github profile</a>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Computer Science student · Gachon University</p>
+          <h1 id="hero-title">Hi, I'm Sukhrob.<br>I build clean, accessible web pages.</h1>
+          <p class="lead">I am learning web programming and turning every lesson into a small working project, from semantic HTML to API-powered apps that score 100 in Lighthouse.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View my projects</a>
+            <a class="btn btn-ghost" href="https://github.com/MSukhrob">GitHub profile</a>
+          </div>
+          <ul class="stats" aria-label="Quick facts">
+            <li><strong>60+</strong><span>course tasks</span></li>
+            <li><strong>100</strong><span>Lighthouse score</span></li>
+            <li><strong>9</strong><span>weeks of practice</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <img src="assets/avatar.svg" width="160" height="160" fetchpriority="high" alt="Graduation cap icon representing Sukhrob">
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">skills</h2>
-      <ul class="skills">
-        <li>html5 and semantic markup</li>
-        <li>css3, flexbox and grid</li>
-        <li>javascript and the dom</li>
-        <li>fetch api and async / await</li>
-        <li>forms and validation</li>
-        <li>git and github</li>
-        <li>web accessibility</li>
-        <li>web performance</li>
-      </ul>
-    </section>
-
-    <section id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">course projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>random joke generator</h3>
-          <p>fetches a joke from a public api with loading, error handling and a favourites list.</p>
-          <a href="https://msukhrob.github.io/web-programming/week6/task1.html">open project</a>
-        </article>
-        <article class="card">
-          <h3>book search app</h3>
-          <p>searches the open library api and shows the results as cards with covers.</p>
-          <a href="https://msukhrob.github.io/web-programming/week7/task1.html">open project</a>
-        </article>
-        <article class="card">
-          <h3>interactive color palette</h3>
-          <p>click, add and remove colour boxes, saved in localstorage.</p>
-          <a href="https://msukhrob.github.io/web-programming/week4friday/task1.html">open project</a>
-        </article>
-        <article class="card">
-          <h3>performance homework</h3>
-          <p>a gallery page optimised from a lighthouse score of 39 to 100.</p>
-          <a href="https://msukhrob.github.io/web-programming/week9_2/task1.html">open project</a>
-        </article>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container two-col">
+        <div>
+          <h2 id="about-title">About me</h2>
+          <p>I study computer science at Gachon University. In the Web Programming course I learned how a page is built layer by layer: structure with HTML, design with CSS and behaviour with JavaScript.</p>
+          <p>I care about the details that make a site good for everyone: readable text, keyboard navigation, helpful error messages and fast loading. Each course task is published on my course page, so the progress is easy to follow.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>University</dt><dd>Gachon University</dd></div>
+          <div><dt>Major</dt><dd>Computer Science</dd></div>
+          <div><dt>Course</dt><dd>Web Programming (K0126002)</dd></div>
+          <div><dt>Focus</dt><dd>Accessibility and performance</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">contact</h2>
-      <p>all my course tasks are on <a href="https://msukhrob.github.io/web-programming/">my course page</a> and the source code is on <a href="https://github.com/MSukhrob">github</a>.</p>
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skill-groups">
+          <article class="skill-card">
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Flexbox and Grid</li>
+              <li>JavaScript</li>
+              <li>DOM events</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Data and forms</h3>
+            <ul class="chips">
+              <li>Fetch API</li>
+              <li>Async / await</li>
+              <li>localStorage</li>
+              <li>Form validation</li>
+              <li>JSON</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Quality and tools</h3>
+            <ul class="chips">
+              <li>Accessibility</li>
+              <li>Performance</li>
+              <li>Lighthouse</li>
+              <li>Git and GitHub</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Course projects</h2>
+        <p class="section-intro">A selection of the tasks I built during the semester. Every one is live and open source.</p>
+        <div class="cards">
+          <article class="card">
+            <span class="card-no" aria-hidden="true">01</span>
+            <h3>Random Joke Generator</h3>
+            <p>Loads a joke from a public API with a spinner, friendly error handling and a favourites list saved in localStorage.</p>
+            <ul class="tags"><li>Fetch</li><li>Async</li><li>localStorage</li></ul>
+            <a class="card-link" href="https://msukhrob.github.io/web-programming/week6/task1.html">Open project<span class="sr-only"> Random Joke Generator</span> <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="card">
+            <span class="card-no" aria-hidden="true">02</span>
+            <h3>Book Search App</h3>
+            <p>Searches the Open Library API and renders the results as responsive cards with cover images.</p>
+            <ul class="tags"><li>REST API</li><li>CSS Grid</li><li>DOM</li></ul>
+            <a class="card-link" href="https://msukhrob.github.io/web-programming/week7/task1.html">Open project<span class="sr-only"> Book Search App</span> <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="card">
+            <span class="card-no" aria-hidden="true">03</span>
+            <h3>Interactive Color Palette</h3>
+            <p>Click, add and remove colour boxes, then save and restore the whole palette after a page reload.</p>
+            <ul class="tags"><li>Events</li><li>classList</li><li>Canvas export</li></ul>
+            <a class="card-link" href="https://msukhrob.github.io/web-programming/week4friday/task1.html">Open project<span class="sr-only"> Interactive Color Palette</span> <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="card">
+            <span class="card-no" aria-hidden="true">04</span>
+            <h3>Form Validation</h3>
+            <p>A course enrolment form with live JavaScript checks, ARIA messages, password confirmation and a smart submit button.</p>
+            <ul class="tags"><li>Validation API</li><li>ARIA</li><li>Forms</li></ul>
+            <a class="card-link" href="https://msukhrob.github.io/web-programming/week9/task1.html">Open project<span class="sr-only"> Form Validation</span> <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="card">
+            <span class="card-no" aria-hidden="true">05</span>
+            <h3>Accessible Events Page</h3>
+            <p>A page with a skip link, labelled form and keyboard-friendly controls, improved from 92 to 100 in Lighthouse.</p>
+            <ul class="tags"><li>WCAG</li><li>Semantic HTML</li><li>Lighthouse</li></ul>
+            <a class="card-link" href="https://msukhrob.github.io/web-programming/week9_1/task1.html">Open project<span class="sr-only"> Accessible Events Page</span> <span aria-hidden="true">&rarr;</span></a>
+          </article>
+          <article class="card">
+            <span class="card-no" aria-hidden="true">06</span>
+            <h3>Performance Makeover</h3>
+            <p>A gallery that went from a Lighthouse score of 39 to 100 with WebP images, lazy loading, defer and minified files.</p>
+            <ul class="tags"><li>WebP</li><li>Lazy loading</li><li>Minify</li></ul>
+            <a class="card-link" href="https://msukhrob.github.io/web-programming/week9_2/task1.html">Open project<span class="sr-only"> Performance Makeover</span> <span aria-hidden="true">&rarr;</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <h2 id="journey-title">My learning journey</h2>
+        <ol class="timeline">
+          <li><span class="when">Weeks 2-3</span><h3>HTML and CSS</h3><p>Semantic pages, the box model, flexbox, grid and responsive layouts.</p></li>
+          <li><span class="when">Weeks 4-5</span><h3>JavaScript and the DOM</h3><p>Selecting elements, handling events and building small interactive tools.</p></li>
+          <li><span class="when">Weeks 6-7</span><h3>APIs</h3><p>Fetching real data with async / await and showing it with loading and error states.</p></li>
+          <li><span class="when">Weeks 8-9</span><h3>Forms, accessibility and speed</h3><p>Validation, ARIA, Lighthouse audits and performance optimisation.</p></li>
+          <li><span class="when">Week 9</span><h3>Git and deployment</h3><p>Branches, merges, commits and publishing with GitHub Pages.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="cta">
+          <h2 id="contact-title">Want to see more?</h2>
+          <p>All my course tasks are on my course page and the source code is on GitHub.</p>
+          <div class="actions">
+            <a class="btn btn-light" href="https://msukhrob.github.io/web-programming/">Course page</a>
+            <a class="btn btn-outline" href="https://github.com/MSukhrob">GitHub</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 sukhrob · web programming course</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 Sukhrob · Web Programming course, Gachon University</p>
   </footer>
 </body>
 </html>
