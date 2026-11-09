@@ -190,3 +190,24 @@ footer {
   color: #475569;
   border-top: 1px solid #cbd5e1;
 }
+
+/* ---------- mobile layout ---------- */
+@media (max-width: 640px) {
+  .site-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .site-header nav a {
+    margin: 0 8px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
