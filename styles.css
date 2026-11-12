@@ -1,18 +1,18 @@
 /* ---------- design tokens ---------- */
 :root {
-  --bg: #f6f7fb;
+  --bg: #f8fafc;
   --surface: #ffffff;
   --surface-alt: #eef0f8;
   --text: #0f172a;
   --muted: #475569;
   --border: #dde1ee;
-  --primary: #4338ca;
-  --primary-dark: #3730a3;
-  --accent: #0e7490;
-  --hero-from: #1e1b4b;
-  --hero-to: #4338ca;
+  --primary: #1a56db;
+  --primary-dark: #1e429f;
+  --accent: #0f766e;
+  --hero-from: #1e293b;
+  --hero-to: #1a56db;
   --shadow: 0 10px 30px rgba(30, 27, 75, 0.1);
-  --radius: 16px;
+  --radius: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -117,8 +117,7 @@ main:focus {
   position: sticky;
   top: 0;
   z-index: 50;
-  background-color: var(--surface);
-  border-bottom: 1px solid var(--border);
+  background-color: #1e293b;
 }
 
 .header-inner {
@@ -134,13 +133,13 @@ main:focus {
 .logo {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--text);
+  color: #ffffff;
   text-decoration: none;
   letter-spacing: -0.02em;
 }
 
 .logo span {
-  color: var(--primary);
+  color: #93c5fd;
 }
 
 .site-header nav {
@@ -150,7 +149,7 @@ main:focus {
 }
 
 .site-header nav a {
-  color: var(--muted);
+  color: #e2e8f0;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -160,8 +159,8 @@ main:focus {
 }
 
 .site-header nav a:hover {
-  background-color: var(--surface-alt);
-  color: var(--text);
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
 }
 
 .theme-toggle {
@@ -205,7 +204,7 @@ main:focus {
 
 .btn-primary {
   background-color: #ffffff;
-  color: #1e1b4b;
+  color: #1e293b;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
@@ -220,7 +219,7 @@ main:focus {
 
 .btn-light {
   background-color: #ffffff;
-  color: #1e1b4b;
+  color: #1e293b;
 }
 
 .btn-outline {
@@ -234,9 +233,9 @@ main:focus {
 
 /* ---------- hero ---------- */
 .hero {
-  background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+  background-color: #1e293b;
   color: #ffffff;
-  padding: 88px 0 80px;
+  padding: 56px 0 56px;
 }
 
 .hero-grid {
@@ -259,13 +258,12 @@ main:focus {
 .hero h1 {
   font-size: clamp(2rem, 4.6vw, 3.2rem);
   line-height: 1.15;
-  letter-spacing: -0.03em;
   margin-bottom: 18px;
 }
 
 .lead {
   font-size: 1.1rem;
-  color: #dbe0ff;
+  color: #e2e8f0;
   max-width: 560px;
   margin-bottom: 28px;
 }
@@ -285,7 +283,7 @@ main:focus {
 }
 
 .stats span {
-  color: #c7ceff;
+  color: #cbd5e1;
   font-size: 0.9rem;
 }
 
@@ -300,7 +298,7 @@ main:focus {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(145deg, #6366f1, #06b6d4);
+  background-color: #1a56db;
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.14), 0 24px 50px rgba(0, 0, 0, 0.35);
 }
 
@@ -425,7 +423,7 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-3px);
   box-shadow: var(--shadow);
   border-color: var(--primary);
 }
@@ -520,15 +518,15 @@ h2 {
 
 /* ---------- call to action ---------- */
 .cta {
-  background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
+  background-color: #1e293b;
   color: #ffffff;
-  border-radius: 24px;
+  border-radius: var(--radius);
   padding: 52px 32px;
   text-align: center;
 }
 
 .cta p {
-  color: #dbe0ff;
+  color: #e2e8f0;
   margin-bottom: 24px;
 }
 
