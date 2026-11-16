@@ -1,19 +1,22 @@
-# Portfolio
+# portfolio
 
-Personal portfolio of Sukhrob, a computer science student at Gachon University, built for the Web Programming course.
+Personal portfolio of Sukhrob, built with React and Vite.
 
-## Features
-- Responsive layout (desktop, tablet and phone)
-- Light and dark theme with a toggle that remembers the choice
-- Skip link, semantic HTML and keyboard-friendly controls
-- Lighthouse score of 100 in Performance, Accessibility, Best Practices and SEO
+- Live site: https://msukhrob.github.io/portfolio/
+- Course tasks: https://msukhrob.github.io/web-programming/
 
-## Files
-- `index.html` - page structure
-- `styles.css` - design tokens, layout and themes
-- `script.js` - theme toggle
-- `assets/avatar.svg` - graduation cap icon from [Phosphor Icons](https://phosphoricons.com) (MIT license)
+## Develop
 
-Live page: https://msukhrob.github.io/portfolio/
+```
+cd react-src
+npm install
+npm run dev
+```
 
-Course tasks: https://msukhrob.github.io/web-programming/
+`npm run build` writes the site into the repository root, which GitHub Pages serves.
+
+## React features
+
+- Components: Header, Hero, About, Skills, Projects, FilterBar, ProjectCard, Journey, Contact, Footer
+- Props and lists with keys
+- State: dark mode toggle (saved in localStorage), project filter and live search
