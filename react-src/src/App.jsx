@@ -13,7 +13,7 @@ function getInitialTheme() {
     const saved = localStorage.getItem('theme')
     if (saved) return saved
   } catch (e) { /* storage can be blocked */ }
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  return 'dark'
 }
 
 function App() {
