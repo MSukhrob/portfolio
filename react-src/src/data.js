@@ -13,9 +13,9 @@ export const navLinks = [
 ]
 
 export const stats = [
-  { value: '70+', label: 'course tasks' },
+  { value: '80+', label: 'course tasks' },
   { value: '100', label: 'Lighthouse score' },
-  { value: '11', label: 'weeks of practice' },
+  { value: '12', label: 'weeks of practice' },
 ]
 
 export const facts = [
@@ -26,15 +26,17 @@ export const facts = [
 ]
 
 export const skillGroups = [
-  { title: 'Front-end', items: ['HTML5', 'CSS3', 'Flexbox and Grid', 'JavaScript', 'React', 'Vite'] },
+  { title: 'Front-end', items: ['HTML5', 'CSS3', 'Flexbox and Grid', 'JavaScript', 'React', 'useState', 'Vite'] },
   { title: 'Data and forms', items: ['Fetch API', 'Async / await', 'localStorage', 'Form validation', 'JSON'] },
   { title: 'Quality and tools', items: ['Accessibility', 'Performance', 'Lighthouse', 'Git and GitHub', 'GitHub Pages'] },
 ]
 
 export const projects = [
+  { id: 10, title: 'Interactive Shopping Cart', text: 'React state with objects & arrays, quantity controls, real-time total and promo discounts.', tags: ['React', 'State'], demo: COURSE + 'week12/task1.html', code: SRC + 'week12/task1.html' },
+  { id: 11, title: 'Counter with History & Undo', text: 'Dual stateful counter tracking last 5 count values with undo functionality.', tags: ['React', 'State'], demo: COURSE + 'week12/task2.html', code: SRC + 'week12/task2.html' },
   { id: 1, title: 'Student Directory', text: 'A React app with a reusable StudentProfileCard component, props and custom CSS.', tags: ['React', 'Props'], demo: 'https://msukhrob.github.io/task11/', code: 'https://github.com/MSukhrob/task11' },
-  { id: 2, title: 'React Practice Lab', text: 'Default props, conditional icons, props.children, StudentCard and ProductCard.', tags: ['React', 'Props'], demo: COURSE + 'week11/practice/index.html', code: COURSE + 'week11/task1.html' },
-  { id: 3, title: 'Project Gallery', text: 'ProjectCard, ProjectList and a FilterBar that filters cards by technology using state.', tags: ['React', 'State'], demo: COURSE + 'week11/gallery/index.html', code: COURSE + 'week11/task1.html' },
+  { id: 2, title: 'React Practice Lab', text: 'Default props, conditional icons, props.children, StudentCard and ProductCard.', tags: ['React', 'Props'], demo: COURSE + 'week11/task2.html', code: SRC + 'week11/task2.html' },
+  { id: 3, title: 'Project Gallery', text: 'ProjectCard, ProjectList and a FilterBar that filters cards by technology using state.', tags: ['React', 'State'], demo: COURSE + 'week11/task4.html', code: SRC + 'week11/task4.html' },
   { id: 4, title: 'Random Joke Generator', text: 'Loads a joke from a public API with a spinner, error handling and favourites in localStorage.', tags: ['JavaScript', 'API'], demo: COURSE + 'week6/task1.html', code: SRC + 'week6/task1.html' },
   { id: 5, title: 'Book Search App', text: 'Searches the Open Library API and renders the results as responsive cards.', tags: ['JavaScript', 'API'], demo: COURSE + 'week7/task1.html', code: SRC + 'week7/task1.html' },
   { id: 6, title: 'Form Validation', text: 'Live checks, ARIA messages, password confirmation and a smart submit button.', tags: ['JavaScript', 'Accessibility'], demo: COURSE + 'week9/task1.html', code: SRC + 'week9/task1.html' },
@@ -50,4 +52,5 @@ export const journey = [
   { when: 'Weeks 8-9', title: 'Forms, accessibility and speed', text: 'Validation, ARIA, Lighthouse audits and performance optimisation.' },
   { when: 'Week 10', title: 'Git and deployment', text: 'Branches, merges, commits and publishing with GitHub Pages.' },
   { when: 'Week 11', title: 'React', text: 'Components, props, lists, conditional rendering and a filterable gallery.' },
+  { when: 'Week 12', title: 'React State & Hooks', text: 'The useState Hook, immutable updates for objects/arrays, lifting state up, and interactive shopping cart.' },
 ]
